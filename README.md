@@ -58,22 +58,4 @@
   </a>
 </div>
 
-<br>
-<h2 align="center">🔥 Random Quote 🔥</h2>
-
-<blockquote>
-  <p id="quote"></p>
-  <footer id="author"></footer>
-</blockquote>
-
-<script>
-  fetch('https://api.quotable.io/random?tags=technology,famous-quotes')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('quote').textContent = data.content;
-      document.getElementById('author').textContent = data.author;
-    })
-    .catch(error => console.error(error));
-</script>
-
 </div>
